@@ -1,0 +1,14 @@
+# pybricks blocks file:{"blocks":{"languageVersion":0,"blocks":[{"type":"blockGlobalSetup","id":"bjK,wS1MYO7aiYkFSwd{","x":150,"y":100,"deletable":false,"next":{"block":{"type":"variables_set_prime_hub","id":";,wn(j|,Hx+h2nzu5(y,","extraState":{"optionLevel":0},"fields":{"VAR":{"id":"%=2LiWsc7A:idXiCI!#q"}},"next":{"block":{"type":"variables_setup_color","id":"`[jF(le4QuyPTkw_EK6L","fields":{"VAR":{"id":"S,J~CQEg{[4KK~BlEO$t"},"COLOUR":"#ff0000"},"inputs":{"HUE":{"shadow":{"type":"unit_angle","id":"pZBUZ|qKa-(r.};8C@-|","fields":{"VALUE0":0}}},"SATURATION":{"shadow":{"type":"unit_percent","id":"P..)ynNfqPZEX4K?1MGQ","fields":{"VALUE0":100}}},"VALUE":{"shadow":{"type":"unit_percent","id":"}dAmpfgZnX%g9:L(z_*u","fields":{"VALUE0":100}}}}}}}}},{"type":"blockGlobalStart","id":"3tJe|AWl0baN(wH9a$@.","x":150,"y":300,"deletable":false,"next":{"block":{"type":"blockLightMatrixDo","id":"Sy5K2*0=-}Ym:t6!zxU%","extraState":{"optionLevel":1},"fields":{"METHOD":"LIGHT_MATRIX_NUMBER"},"inputs":{"VAR":{"shadow":{"type":"variables_get_light_matrix_hub","id":"VVzHj^NnS=;Fu~jGknU:","fields":{"VAR":{"id":"%=2LiWsc7A:idXiCI!#q","name":"prime hub","type":"PrimeHub"}}}},"ARG0":{"shadow":{"type":"blockMathNumber","id":"vN!+`NCbH3XAMeRTbJs.","fields":{"NUM":67}}}},"next":{"block":{"type":"blockPrint","id":"j,,T}?rBkaW$1v?olp4p","extraState":{"optionLevel":0},"inputs":{"TEXT0":{"shadow":{"type":"text","id":"!x5.0YiWya^`(y)yO5B8","fields":{"TEXT":"67"}}}},"next":{"block":{"type":"blockWaitTime","id":".`W8JgWRP!i[LD@UCe^9","inputs":{"VALUE0":{"shadow":{"type":"unit_time","id":",=jFd6)/i8+;06xe]Xtb","fields":{"VALUE0":1000}}}}}}}}}}}]},"variables":[{"name":"red","id":"-LOT]%2Qo.vW_RQ`(ZV5","type":"ColorDef"},{"name":"orange","id":")+{9xEeQ;]3AW,[zY)8)","type":"ColorDef"},{"name":"yellow","id":"+9vkbl9m,:vtV.*[N.7/","type":"ColorDef"},{"name":"green","id":"y6/}]A_k?5k/_)}gPF2A","type":"ColorDef"},{"name":"cyan","id":"Kp#9Kj|tu.aw)sT4:,^Q","type":"ColorDef"},{"name":"blue","id":"{2@kC/aEB!(p1frcTNzs","type":"ColorDef"},{"name":"violet","id":";6CN4F/9lDk6h:}+ueBl","type":"ColorDef"},{"name":"magenta","id":"QG1Dhr5^wo]IF@|HoF:N","type":"ColorDef"},{"name":"white","id":"d,xgSJI;Hb6,4q-|%JVN","type":"ColorDef"},{"name":"none","id":"#YIj3}T?[RL3dqei%(zT","type":"ColorDef"},{"name":"my red","id":"S,J~CQEg{[4KK~BlEO$t","type":"ColorDef"},{"name":"","id":"GIQ2:szoo*8`9Xdjh(|z","type":"InventorHub"},{"name":"prime hub","id":"%=2LiWsc7A:idXiCI!#q","type":"PrimeHub"}],"info":{"type":"pybricks","version":"2.0.0"},"workspaceOptions":{"scrollX":107.94170739936862,"scrollY":-96.31026738150385,"scale":0.9319002172588361}}
+from pybricks.hubs import PrimeHub
+from pybricks.parameters import Color
+from pybricks.tools import wait
+
+# Set up.
+prime_hub = PrimeHub()
+Color.MY_RED = Color(0, 100, 100)
+
+
+# The main program starts here.
+prime_hub.display.number(67)
+print('67')
+wait(1000)
